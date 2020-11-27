@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
 
         body {
@@ -69,6 +70,83 @@
         .advantagesDesign {
             margin: 0;
         }
+        
+        .mainBodyDesign {
+            max-width: 1000px;
+            width: 100%;
+            /* text-align: center; */
+            margin: 0 auto 0 auto;
+        }
+
+        .mainUseThisSiteSection {
+            margin-top: 50px;
+        }
+
+        .eachFeatureMainDesign {
+            display: flex;
+            flex-direction: row;
+            margin: 0 0 75px 0;
+        }
+
+        .fa-fire , .fa-truck , .fa-battery-full{
+            color: darkorange;
+        }
+
+        .whyUseThisSiteSectionDesign {
+            display: flex;
+            flex-direction: column;
+            width: 80vw;
+        }
+
+        .whyUseThisSiteSectionIconDesign {
+            width: 20vw;
+            text-align: center;
+        }
+
+        .videoSectionDesign {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .pricingSectionDesign {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+
+        .eachPriceListDesign {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100% / 3);
+            border: 1px solid black;
+            margin: 10px 10px;
+        }
+
+        .featureHeaderDesign {
+            background-color: #ddd;
+            padding: 15px;
+            font-weight: 700;
+        }
+
+        .listDesign {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        .listDesign li {
+            padding: 5px;
+        }
+
+        .choosePlanButton {
+            background-color: #f1c40f;
+            height: 40px;
+            margin: 15pX;
+            padding: 5px 15px;
+            font-weight: 500;
+            font-size: 17px;
+        }
 
     </style>
 </head>
@@ -85,7 +163,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="mainBodyDesign">
         <section class="introSetionDesign">
             <h2>Handcrafted, home-made masterpieces</h2>
             <form class="subscriptionForm">
@@ -93,28 +171,72 @@
                 <input type="submit" class="submitButton" value="Get Started" class="submitButtonDesign">
             </form>
         </section>
-        <section>
-            <div>
-                <img>
-                <h2 class="advantagesDesign">Premium Materials</h2>
-                <p class="advantagesDesign">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
-            </div>
-            <div>
-                <img>
-                <h2 class="advantagesDesign">Fast Shipping</h2>
-                <p class="advantagesDesign">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-            </div>
-            <div>
-                <img>
-                <h2 class="advantagesDesign">Quality Assurance</h2>
-                <p class="advantagesDesign">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
-            </div>
+        <section class="mainUseThisSiteSection">
+            <section class="eachFeatureMainDesign">
+                <div class="whyUseThisSiteSectionIconDesign">
+                    <i class="fa fa-3x fa-fire"></i>
+                </div>
+                <div class="whyUseThisSiteSectionDesign">
+                    <h2 class="advantagesDesign">Premium Materials</h2>
+                    <p class="advantagesDesign">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
+            </section>
+            <section class="eachFeatureMainDesign">
+                <div class="whyUseThisSiteSectionIconDesign">
+                    <i class="fa fa-3x fa-truck"></i>
+                </div>
+                <div class="whyUseThisSiteSectionDesign">
+                    <h2 class="advantagesDesign">Fast Shipping</h2>
+                    <p class="advantagesDesign">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
+            </section>
+            <section class="eachFeatureMainDesign">
+                <div class="whyUseThisSiteSectionIconDesign">
+                    <i class="fa fa-3x fa-battery-full"></i>
+                </div>
+                <div class="whyUseThisSiteSectionDesign">
+                    <h2 class="advantagesDesign">Quality Assurance</h2>
+                    <p class="advantagesDesign">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>
+            </section>
         </section>
-        <section>
-            video
+        <section class="videoSectionDesign">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
-        <section>
-            price
+        <section class="pricingSectionDesign">
+            <div class="eachPriceListDesign">
+                <div class="featureHeaderDesign">TENOR TROMBONE</div>
+                <h2>$600</h2>
+                <ul class="listDesign">
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum color.</li>
+                    <li>Lorem ipsum.</li>
+                </ul>
+                <button class="choosePlanButton">SELECT</button>
+            </div>
+            <div class="eachPriceListDesign">
+                <div class="featureHeaderDesign">BASS TROMBONE</div>
+                <h2>$900</h2>
+                <ul class="listDesign">
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum color.</li>
+                    <li>Lorem ipsum.</li>
+                </ul>
+                <button class="choosePlanButton">SELECT</button>
+            </div>
+            <div class="eachPriceListDesign">
+                <div class="featureHeaderDesign">VALVE TROMBONE</div>
+                <h2>$1200</h2>
+                <ul class="listDesign">
+                    <li>Plays similar to a Trumpet</li>
+                    <li>Great for Jazz Bands</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ul>
+                <button class="choosePlanButton">SELECT</button>
+            </div>
         </section>
         <footer>
             footer
